@@ -3,7 +3,7 @@ import Editor from "./components/Editor";
 import Preview from "./components/Preview";
 
 import Markdown from "marked-react";
-
+import editorLogo from "../public/editor-logo.svg";
 import "./App.css";
 
 function App() {
@@ -16,8 +16,13 @@ function App() {
   return (
     <>
       <div className="app">
-        <Editor handleChange={handleChange} />
-        <Preview text={text} />
+        <div className="logo">
+          <img src={editorLogo} className="logo-icon" />
+        </div>
+        <div className="hero">
+          <Editor handleChange={handleChange} />
+          <Preview text={text} />
+        </div>
       </div>
     </>
   );
