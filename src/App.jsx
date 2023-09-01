@@ -3,7 +3,7 @@ import Editor from "./components/Editor";
 import Preview from "./components/Preview";
 
 import Markdown from "marked-react";
-import editorLogo from "../public/editor-logo.svg";
+import editorLogo from "/editor-logo.svg";
 import "./App.css";
 
 function App() {
