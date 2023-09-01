@@ -15,10 +15,10 @@ function App() {
 
   return (
     <>
+      <div className="logo">
+        <img src={editorLogo} className="logo-icon" />
+      </div>
       <div className="app">
-        <div className="logo">
-          <img src={editorLogo} className="logo-icon" />
-        </div>
         <div className="hero">
           <Editor handleChange={handleChange} />
           <Preview text={text} />
